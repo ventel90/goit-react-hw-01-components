@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
-export const ProfileCard = styled.div` margin: 40px auto;
-padding: 20px;
+export const ProfileCard = styled.div` 
+margin: 40px auto;
 width: 350px;
 display: flex;
 flex-direction: column;
@@ -12,19 +12,21 @@ box-shadow: var(--main-shadow);
 `;
 
 export const Description = styled.div`
-  margin-bottom: 25px;
-  text-align: center;
-  color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--primary);
 `;
 
 export const Avatar = styled.img`
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 150px;
-  display: block;
+  border: 3px solid #e9eef3;
   border-radius: 50%;
-  box-shadow: var(--box-shadow);
 `;
 
 export const Name = styled.p`
@@ -47,34 +49,34 @@ export const Location = styled.p`
 `;
 
 export const StatsList = styled.ul`
-  margin: 0 auto;
-  padding: 10px;
-  width: 100%;
-  list-style: none;
+margin: 0;
+padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  /* border-radius: 4px;
-  box-shadow: var(--main-shadow); */
+  justify-content: center;
+
+  width: 100%;
+
+  border-top: 1px solid #dddddd;
+  background-color: #e9eef3;
 `;
 
 export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 33.333%;
-  gap: 7px;
+  padding: 15px;
+  border-right: 1px solid #dddddd;
+
+  :last-child {
+  border-right: none;}
 `;
 
 export const Label = styled.span`
-  font-weight: 500;
-  color: var(--secondary);
-  text-shadow: var(--main-shadow);
+  font-size: 12px;
+  margin-bottom: 5px;
 `;
 
 export const Quantity = styled.span`
   font-weight: 700;
-  color: var(--secondary);
-  text-shadow: var(--main-shadow);
 `;
