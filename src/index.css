@@ -16,12 +16,13 @@ code {
 
 
 :root {
-  --accent: #0a58b8;
-  --primary: #000000;
-  --secondary: #4e4646;
-  --bg: #e6e9eb;
-  --main-shadow: -2px -2px 5px #ffffff, 3px 3px 5px rgba(0, 0, 0, 0.1);
-  --inset-shadow: inset -2px -2px 5px #ffffff, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
+  --accent: #2196f3;
+  --primary: #212121;
+  --secondary: #464646;
+  --bg: #F5F4FA;
+  --main-shadow: -2px -2px 5px #ffffff,
+    3px 3px 5px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   --online: green;
   --offline: red;
 }

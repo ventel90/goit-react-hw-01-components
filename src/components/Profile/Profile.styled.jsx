@@ -24,7 +24,7 @@ export const Avatar = styled.img`
   width: 150px;
   display: block;
   border-radius: 50%;
-  box-shadow: var(--inset-shadow);
+  box-shadow: var(--box-shadow);
 `;
 
 export const Name = styled.p`
@@ -46,10 +46,35 @@ export const Location = styled.p`
   text-shadow: var(--main-shadow);
 `;
 
-// export const  = styled.`
-    
-// `;
+export const StatsList = styled.ul`
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  /* border-radius: 4px;
+  box-shadow: var(--main-shadow); */
+`;
 
-// export const  = styled.`
-    
-// `;
+export const StatsItem = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 33.333%;
+  gap: 7px;
+`;
+
+export const Label = styled.span`
+  font-weight: 500;
+  color: var(--secondary);
+  text-shadow: var(--main-shadow);
+`;
+
+export const Quantity = styled.span`
+  font-weight: 700;
+  color: var(--secondary);
+  text-shadow: var(--main-shadow);
+`;
