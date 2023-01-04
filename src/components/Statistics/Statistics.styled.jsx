@@ -21,6 +21,7 @@ export const Title = styled.h2`
 `;
 
 export const StatList = styled.ul`
+padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

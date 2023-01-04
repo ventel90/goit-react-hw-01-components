@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const ProfileCard = styled.div` 
 margin: 40px auto;
-width: 350px;
+width: 390px;
 display: flex;
 flex-direction: column;
 align-items: center;
