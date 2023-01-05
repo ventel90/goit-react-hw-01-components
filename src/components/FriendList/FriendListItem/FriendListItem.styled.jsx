@@ -9,6 +9,7 @@ const blink = keyframes`
 `;
 
 export const Friend = styled.li`
+  position: relative;
   padding: 10px;
   width: 100%;
   display: flex;
@@ -20,17 +21,17 @@ export const Friend = styled.li`
   border-radius: 10px;
 `;
 
-export const Online = styled.div`
-  position: relative;
-  width: 20px;
-  height: 20px;
+export const Online = styled.span`
+  width: 15px;
+  height: 15px;
   background-color: var(--online);
   border-radius: 50%;
   box-shadow: var(--main-shadow);
+  margin-right: 10px;
   :after {
     content: '';
     position: absolute;
-    top: 0;
+    top: 40%;
     left: 0;
     display: block;
     width: 20px;
@@ -42,11 +43,26 @@ export const Online = styled.div`
   }
 `;
 
-export const Offline = styled.div`
-  width: 20px;
-  height: 20px;
+export const Offline = styled.span`
+  width: 15px;
+  height: 15px;
   background-color: var(--offline);
   border-radius: 50%;
+  box-shadow: var(--main-shadow);
+  margin-right: 10px;;
+  :after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--offline);
+    border-radius: 50%;
+    opacity: 0.7;
+    /* animation: ${blink} 1200ms linear infinite; */
+  }
 `;
 
 export const Name = styled.p`
